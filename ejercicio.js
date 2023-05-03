@@ -39,7 +39,7 @@ function cantidadPersonasPorMes(mes) {
     let cantidad = 0;
     for (let i = 0; i < datos.length; i++) {
         if (datos[i].mes === mes) {
-            cantidad += datos[i].persona;
+            cantidad ++;
         }
     }
     return cantidad;
@@ -52,7 +52,7 @@ function cantidadPersonasPorTema(tema) {
     let descripcion;
     for (let i = 0; i < datos.length; i++) {
         if (datos[i].tema === tema) {
-            cantidad += datos[i].persona;
+            cantidad ++;
         }
     }
     for (let j = 0; j < temas.length; j++) {
